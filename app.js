@@ -6,7 +6,7 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public');
 
 
-app.use(express.static(publicFolderPath) );
+app.use(express.static("public") );
 
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
