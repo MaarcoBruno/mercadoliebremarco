@@ -12,9 +12,10 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
   });
 
-app.get('/', (req, res)=> {
-    res.sendFile(path.join(__dirname+ 'views\home.html'));
-});
+  app.get("/", (_, res)=>{
+    res.sendFile(__dirname + "/views/home.html")
+})
+
 
 
 
